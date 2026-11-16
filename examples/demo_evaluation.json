@@ -1,0 +1,12 @@
+{
+  "deliberate_error": "The demo says RAG retrains the model and permanently changes its knowledge. Retrieval supplies relevant information for a response; it does not itself retrain the model.",
+  "expected_failures": [
+    "why_it_matters: no reason to use RAG is explained",
+    "no_false_retraining_claim: incorrectly says RAG retrains the model permanently",
+    "process: retrieval, context, and generation are not all explained",
+    "example: no worked question tied to found evidence and an answer",
+    "limitations: no caution that retrieval can still produce a wrong answer",
+    "length: too short for a standalone beginner lesson"
+  ],
+  "teaching_note": "The deterministic checks demonstrate catching missing elements. The configured semantic evaluator is responsible for checking the false retraining claim."
+}
